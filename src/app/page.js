@@ -7,7 +7,7 @@ const page = () => {
   return (
     <>
       <HomeHeader />
-      <div className="flex flex-col items-center mt-24">
+      <div className="flex flex-col items-center mt-24 lg:mt-10">
         <Image
           src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
           alt="google logo"
