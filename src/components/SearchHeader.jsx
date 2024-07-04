@@ -16,6 +16,7 @@ const SearchHeader = () => {
             height={40}
             width={120}
             priority
+            // style={{ width: "auto" }}
           />
         </Link>
         <div className="flex-1">
