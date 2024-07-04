@@ -4,6 +4,7 @@ import Image from "next/image";
 import SearchBar from "./SearchBar";
 import { IoSettingsOutline } from "react-icons/io5";
 import { TbGridDots } from "react-icons/tb";
+import SearchHeaderOptions from "./SearchHeaderOptions";
 
 const SearchHeader = () => {
   return (
@@ -30,6 +31,7 @@ const SearchHeader = () => {
           Sign in
         </button>
       </div>
+      <SearchHeaderOptions />
     </header>
   );
 };
