@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect } from "react";
 
-const ErrorComponent = ({ errorMessage, reset }) => {
+const Error = ({ error, reset }) => {
   useEffect(() => {
-    console.log("error", errorMessage);
-  }, [errorMessage]);
+    console.log("error", error);
+  }, [error]);
 
   return (
     <div className="flex flex-col justify-center items-center py-10">
@@ -14,4 +14,4 @@ const ErrorComponent = ({ errorMessage, reset }) => {
   );
 };
 
-export default ErrorComponent;
+export default Error;
