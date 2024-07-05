@@ -1,8 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import WebSearchResults from "@/components/WebSearchResults";
+import { resolve } from "styled-jsx/css";
 const WebSearchPage = async ({ searchParams }) => {
   const startIndex = searchParams.start || "1";
+  await new Promise((resolve) => setTimeout(resolve, 2000));
   const response = await fetch(
     `https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_API_KEY}&q=${searchParams.searchTerm}&start=${startIndex}`
   );
